@@ -16,7 +16,7 @@ public class CiPipelineAppApplication {
 		}
 		@GetMapping
 		public String greeting() {
-			return "Welcome to COMP367";
+			return "Good Afternoon, Riyadh, Welcome to COMP367";
 
 	}
 
