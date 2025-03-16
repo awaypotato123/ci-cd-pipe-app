@@ -1,3 +1,5 @@
 FROM openjdk:21
-ADD target/spring-devops.jar spring-devops.jar
-ENTRYPOINT ["java","-jar","/spring-devops.jar"]
+WORKDIR /app
+COPY target/spring-devops.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app/app.jar"]
+
